@@ -41,5 +41,5 @@ windows = [
 davinci-director = "davinci_director.server:main"
 
 [project.urls]
-"Homepage" = "https://github.com/Pooja/davinci-director-mcp"
-"Bug Tracker" = "https://github.com/Pooja/davinci-director-mcp/issues"
+"Homepage" = "https://github.com/kashyaprahul12659/davinci-director-mcp"
+"Bug Tracker" = "https://github.com/kashyaprahul12659/davinci-director-mcp/issues"

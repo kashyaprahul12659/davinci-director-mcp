@@ -96,7 +96,7 @@ Most existing DaVinci Resolve MCP servers are simple 1:1 API wrappers around Bla
 
 ```bash
 # Clone the repository
-git clone https://github.com/Pooja/davinci-director-mcp.git
+git clone https://github.com/kashyaprahul12659/davinci-director-mcp.git
 cd davinci-director-mcp
 
 # Install dependencies in editable mode
