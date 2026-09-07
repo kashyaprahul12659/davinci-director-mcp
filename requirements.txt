@@ -1,0 +1,7 @@
+mcp>=1.0.0
+numpy>=1.24.0
+pillow>=9.5.0
+pillow-heif>=0.13.0
+imageio-ffmpeg>=0.4.8
+yt-dlp>=2024.3.10
+pywin32>=306; sys_platform == 'win32'

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "davinci-director-mcp"
+version = "1.0.0"
+description = "Autonomous AI Video Director & Editor for DaVinci Resolve. Full beat-sync, 3D LUT color grading, and hands-free Option C hybrid editing."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Pooja & Antigravity Contributors" }]
+requires-python = ">=3.10"
+keywords = ["davinci-resolve", "mcp", "model-context-protocol", "video-editing", "ai-director", "color-grading", "beat-detection", "claude", "cursor"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Video :: Non-Linear Editor",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "numpy>=1.24.0",
+    "pillow>=9.5.0",
+    "pillow-heif>=0.13.0",
+    "imageio-ffmpeg>=0.4.8",
+    "yt-dlp>=2024.3.10",
+]
+
+[project.optional-dependencies]
+windows = [
+    "pywin32>=306",
+]
+
+[project.scripts]
+davinci-director = "davinci_director.server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/Pooja/davinci-director-mcp"
+"Bug Tracker" = "https://github.com/Pooja/davinci-director-mcp/issues"

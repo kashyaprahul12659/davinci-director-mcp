@@ -1,0 +1,26 @@
+{
+  "claude_desktop_config": {
+    "mcpServers": {
+      "davinci-director": {
+        "command": "python",
+        "args": ["-m", "davinci_director.server"]
+      }
+    }
+  },
+  "cursor_config": {
+    "mcpServers": {
+      "davinci-director": {
+        "command": "python",
+        "args": ["-m", "davinci_director.server"]
+      }
+    }
+  },
+  "antigravity_config": {
+    "mcpServers": {
+      "davinci-resolve": {
+        "command": "python",
+        "args": ["-m", "davinci_director.server"]
+      }
+    }
+  }
+}
