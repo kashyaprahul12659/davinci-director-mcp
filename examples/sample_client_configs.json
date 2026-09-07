@@ -1,25 +1,91 @@
 {
-  "claude_desktop_config": {
-    "mcpServers": {
-      "davinci-director": {
-        "command": "python",
-        "args": ["-m", "davinci_director.server"]
+  "claude_desktop": {
+    "file_location": {
+      "windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+      "macos": "~/Library/Application Support/Claude/claude_desktop_config.json"
+    },
+    "config": {
+      "mcpServers": {
+        "davinci-director": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"]
+        }
       }
     }
   },
-  "cursor_config": {
-    "mcpServers": {
-      "davinci-director": {
-        "command": "python",
-        "args": ["-m", "davinci_director.server"]
+  "claude_code_cli": {
+    "command": "claude mcp add davinci-director -- python -m davinci_director.server"
+  },
+  "cursor_ide": {
+    "file_location": ".cursor/mcp.json or Settings > Features > MCP",
+    "config": {
+      "mcpServers": {
+        "davinci-director": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"]
+        }
       }
     }
   },
-  "antigravity_config": {
-    "mcpServers": {
-      "davinci-resolve": {
-        "command": "python",
-        "args": ["-m", "davinci_director.server"]
+  "vscode_cline_and_roo_code": {
+    "file_location": "cline_mcp_settings.json",
+    "config": {
+      "mcpServers": {
+        "davinci-director": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"],
+          "disabled": false,
+          "autoApprove": []
+        }
+      }
+    }
+  },
+  "vscode_continue": {
+    "file_location": "~/.continue/config.json",
+    "config": {
+      "experimental": {
+        "modelContextProtocolServers": [
+          {
+            "transport": {
+              "type": "stdio",
+              "command": "python",
+              "args": ["-m", "davinci_director.server"]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "google_antigravity": {
+    "file_location": "~/.gemini/antigravity/mcp_config.json",
+    "config": {
+      "mcpServers": {
+        "davinci-resolve": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"]
+        }
+      }
+    }
+  },
+  "windsurf": {
+    "file_location": "~/.codeium/windsurf/mcp_config.json",
+    "config": {
+      "mcpServers": {
+        "davinci-director": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"]
+        }
+      }
+    }
+  },
+  "zed_editor": {
+    "file_location": "~/.config/zed/settings.json",
+    "config": {
+      "experimental.mcp_servers": {
+        "davinci-director": {
+          "command": "python",
+          "args": ["-m", "davinci_director.server"]
+        }
       }
     }
   }
